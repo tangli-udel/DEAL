@@ -40,6 +40,12 @@ This repository reproduces our results on [ImageNet](https://www.image-net.org/d
 pip install -r requirements.txt
 ```
 
+## Generating Concepts for Categories
+```
+./deal/generate_descriptors.ipynb
+```
+
+
 ## Training
 
 Befor training, please replace the paths in [load.py](https://github.com/tangli-udel/DEAL/blob/3d31d67638395af9dda938017882f73088105a99/load.py#L81) to your own datasets.
