@@ -61,8 +61,20 @@ python train.py --dataset imagenet --model ViT-B/32 --batch_size 256 --lr 5e-7 -
 The results for prediction accuracy and explanation quality:
 ![quantitative](figures/results.png)
 
-### Prediction Accuracy
 To evaluate the prediction accuracy, please run:
+```
+./deal/evaluation.ipynb
+```
+
+To evaluate concept-level explanation disentanglability, please run:
+```
+./deal/exp_disentanglability.ipynb
+```
+
+To evaluate concept-level explanation localzability (fidelity), please run:
+```
+./deal/exp_localizability.ipynb
+```
 
 
 
