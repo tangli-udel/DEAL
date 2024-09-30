@@ -41,6 +41,8 @@ pip install -r requirements.txt
 ```
 
 ## Generating Concepts for Categories
+![quantitative](figures/figure_concepts.png)
+
 You will need to add your [OpenAI API](https://platform.openai.com/docs/api-reference/introduction) token and run the following notebook. Note that in notebook showcase our best prompt for *this task*, you can change to any category list as you want or modify the prompts as needed.
 ```
 ./deal/generate_descriptors.ipynb
@@ -54,3 +56,20 @@ Befor training, please replace the paths in [load.py](https://github.com/tangli-
 ```
 python train.py --dataset imagenet --model ViT-B/32 --batch_size 256 --lr 5e-7 --save_path "/path/to/save/"
 ```
+
+## Evaluations
+The results for prediction accuracy and explanation quality:
+![quantitative](figures/results.png)
+
+### Prediction Accuracy
+To evaluate the prediction accuracy, please run:
+
+
+
+## Acknowledgement
+Part of our code is borrowed from the following repositories.
+
+- [Visual Classification via Description from Large Language Models](https://github.com/sachit-menon/classify_by_description_release)
+- [Generic Attention-model Explainability for Interpreting Bi-Modal and Encoder-Decoder Transformers](https://github.com/hila-chefer/Transformer-MM-Explainability)
+
+We thank to the authors for releasing their codes. Please also consider citing their works.
