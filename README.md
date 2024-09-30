@@ -47,6 +47,7 @@ You will need to add your [OpenAI API](https://platform.openai.com/docs/api-refe
 ```
 ./deal/generate_descriptors.ipynb
 ```
+OpenAI will update their API library, please modify the code accordingly if needed.
 
 
 ## Training
