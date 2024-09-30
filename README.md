@@ -41,6 +41,7 @@ pip install -r requirements.txt
 ```
 
 ## Generating Concepts for Categories
+You will need to add your [OpenAI API](https://platform.openai.com/docs/api-reference/introduction) token and run the following notebook. Note that in notebook showcase our best prompt for *this task*, you can change to any category list as you want or modify the prompts as needed.
 ```
 ./deal/generate_descriptors.ipynb
 ```
