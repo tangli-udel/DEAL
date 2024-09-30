@@ -29,7 +29,7 @@ To this end, we proposed to Disentangle and Localize (DEAL) concept-level explan
 
 
 ## Pretrained Weights
-- ImageNet Pretrained: [DEAL-Openai-CLIP-RN50](https://drive.google.com/file/d/1Th_WQ0aPhnmqQ_uv7GJKv9vLyApcfaic/view?usp=sharing), [DEAL-Openai-CLIP-ViT-B/32](https://drive.google.com/file/d/1SoL-nNG4AgQ2V2Q39M2KX5bqWx95CaA0/view?usp=sharing)
+- Fine-tuned on ImageNet: [DEAL-Openai-CLIP-RN50](https://drive.google.com/file/d/1Th_WQ0aPhnmqQ_uv7GJKv9vLyApcfaic/view?usp=sharing), [DEAL-Openai-CLIP-ViT-B/32](https://drive.google.com/file/d/1SoL-nNG4AgQ2V2Q39M2KX5bqWx95CaA0/view?usp=sharing)
 
 
 ## Datasets and Requirements
