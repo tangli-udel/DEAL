@@ -31,8 +31,19 @@ To this end, we proposed to Disentangle and Localize (DEAL) concept-level explan
 ## Pretrained Weights
 - ImageNet Pretrained: [DEAL-Openai-CLIP-RN50](https://drive.google.com/file/d/1Th_WQ0aPhnmqQ_uv7GJKv9vLyApcfaic/view?usp=sharing), [DEAL-Openai-CLIP-ViT-B/32](https://drive.google.com/file/d/1SoL-nNG4AgQ2V2Q39M2KX5bqWx95CaA0/view?usp=sharing)
 
-Quick start for the training:
+
+## Datasets and Requirements
+
+This repository reproduces our results on [ImageNet](https://www.image-net.org/download.php), [CUB](https://www.vision.caltech.edu/datasets/cub_200_2011/), [EuroSAT](https://zenodo.org/records/7711810#.ZAm3k-zMKEA), [OxfordPets](https://www.robots.ox.ac.uk/~vgg/data/pets/), and [Food101](https://data.vision.ee.ethz.ch/cvl/datasets_extra/food-101/) datasets, please download these datasets as needed. Our code is build upon Python3 and Pytorch v2.0.1 on Ubuntu 18.04. Please install all required packages by running:
 
 ```
-sh run.sh
+pip install -r requirements.txt
+```
+
+## Training
+
+Befor training, please replace the paths in [load.py](https://github.com/tangli-udel/DEAL/blob/3d31d67638395af9dda938017882f73088105a99/load.py#L81) to your own datasets.
+
+```
+python train.py --dataset imagenet --model ViT-B/32 --batch_size 256 --lr 5e-7 --save_path "/path/to/save/"
 ```
