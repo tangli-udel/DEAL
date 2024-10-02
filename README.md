@@ -1,6 +1,6 @@
 # DEAL: Disentangle and Localize Concept-level Explanations for VLMs (ECCV 2024, Strong Double Blind)
 
-[[Paper](https://arxiv.org/pdf/2407.14412)] [[Code](https://github.com/tangli-udel/DEAL)] [[Video](https://www.youtube.com/watch?v=Rd4vFWI2fKw)] [[DeepREAL Lab](https://deep-real.github.io/)]
+[[Paper](https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/05615.pdf)] [[Code](https://github.com/tangli-udel/DEAL)] [[Video](https://www.youtube.com/watch?v=Rd4vFWI2fKw)] [[DeepREAL Lab](https://deep-real.github.io/)]
 
 This repository holds the Pytorch implementation of **DEAL** in [DEAL: Disentangle and Localize Concept-level Explanations for VLMs](https://arxiv.org/pdf/2407.14412) by Tang Li, Mengmeng Ma, and Xi Peng.
 If you find our code useful in your research, please consider citing:
@@ -52,7 +52,7 @@ OpenAI will update their API library, please modify the code accordingly if need
 
 ## Training
 
-Befor training, please replace the paths in [load.py](https://github.com/tangli-udel/DEAL/blob/3d31d67638395af9dda938017882f73088105a99/load.py#L81) to your own datasets.
+Before training, please replace the paths in [load.py](https://github.com/tangli-udel/DEAL/blob/3d31d67638395af9dda938017882f73088105a99/load.py#L81) to your own datasets.
 
 ```
 python train.py --dataset imagenet --model ViT-B/32 --batch_size 256 --lr 5e-7 --save_path "/path/to/save/"
