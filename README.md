@@ -59,6 +59,7 @@ Before training, please replace the paths in [load.py](https://github.com/tangli
 python train.py --dataset imagenet --model ViT-B/32 --batch_size 256 --lr 5e-7 --save_path "/path/to/save/"
 ```
 Note that we use adaptive batch sizes for different datasets to alleviate the ambiguity within a batch. Specifically, we use a batch size that is smaller than the number of classes in the dataset. For example, we use 128 for CUB, 64 for Food101, 32 for OxfordPets, and 8 for EuroSAT.
+We usually fine-tune one epoch for each of the datasets, please change the number of training steps according to your batch size.
 
 ## Evaluations
 The results for prediction accuracy and explanation quality:
